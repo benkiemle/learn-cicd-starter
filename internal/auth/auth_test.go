@@ -6,7 +6,6 @@ import (
 )
 
 func TestGetAPIKey(t *testing.T) {
-	t.Fail()
 	header := http.Header{}
 	header.Add("Authorization", "ApiKey NOTREAL")
 	apiKey, err := GetAPIKey(header)
